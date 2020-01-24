@@ -282,7 +282,7 @@ void FONCTION_HABITACLE(void)
       # combined # Sum: FONCTION_HABITACLE/TRAITEMENT_FREINAGE_URGENCE/DETECTION_FREINAGE_URGENCE/Su
       m */
    if ((((Int16) (Sa1_Brake_Input - ((Int16) ((((Int32) X_Sa7_Unit_Delay) * 25) / ((Int32) 288)))))
-    >= 5 /* 0.4 */) && (Sa1_Brake_Input >= 167 /* 15. */)) {
+    >= 50 /* 0.4 */) && (Sa1_Brake_Input >= 167 /* 15. */)) {
       /* Switch: FONCTION_HABITACLE/TRAITEMENT_FREINAGE_URGENCE/TEMPORISATION_COMMANDE/Switch
          # combined # Unit delay: FONCTION_HABITACLE/TRAITEMENT_FREINAGE_URGENCE/TEMPORISATION_COMMA
          NDE/Unit Delay1 */

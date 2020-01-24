@@ -1,6 +1,6 @@
 #include "FONCTION_HABITACLE.h"
 
-static const float refreshRate = 0.01;
+static const float delayTime = 10; //ms
 
 // Switches
 static const uint8_t leftIndicator = 7;
@@ -63,6 +63,6 @@ void loop()
   digitalWrite(brakeLED, Sa1_brakeSignal);  
 
   // Waiting for new refresh
-  delay((UInt16)(1/refreshRate));
+  delay(delayTime);
   
 }
