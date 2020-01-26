@@ -1,0 +1,68 @@
+$**************  SCADETOC Version 2019 R2 (build 20190418) **************
+** Generation date: 2020-01-24T11:54:00
+** Command: scade -code "Z:\SCADE\scadeWorkspace\test\test.etp" -root System::System -conf KCG
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file Z:\SCADE\scadeWorkspace\test\KCG\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file Z:\SCADE\scadeWorkspace\test\KCG\System_System.c, line 0, character 0
+ ~System_System.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\FONCTION_HABITACLE_FONCTION_HABITACLE.c, line 0, character 0
+ ~FONCTION_HABITACLE_FONCTION_HABITACLE.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE.c, line 0, character 0
+ ~TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\Saturation_FONCTION_HABITACLE.c, line 0, character 0
+ ~Saturation_FONCTION_HABITACLE.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE.c, line 0, character 0
+ ~TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\FONCTION_FREINAGE_FONCTION_HABITACLE.c, line 0, character 0
+ ~FONCTION_FREINAGE_FONCTION_HABITACLE.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\FONCTION_CLIGNOTANT_FONCTION_HABITACLE.c, line 0, character 0
+ ~FONCTION_CLIGNOTANT_FONCTION_HABITACLE.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\SIGNAL_GENERATION_FONCTION_HABITACLE.c, line 0, character 0
+ ~SIGNAL_GENERATION_FONCTION_HABITACLE.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\System_System.h, line 0, character 0
+ ~System_System.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\FONCTION_HABITACLE_FONCTION_HABITACLE.h, line 0, character 0
+ ~FONCTION_HABITACLE_FONCTION_HABITACLE.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE.h, line 0, character 0
+ ~TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\Saturation_FONCTION_HABITACLE.h, line 0, character 0
+ ~Saturation_FONCTION_HABITACLE.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE.h, line 0, character 0
+ ~TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\FONCTION_FREINAGE_FONCTION_HABITACLE.h, line 0, character 0
+ ~FONCTION_FREINAGE_FONCTION_HABITACLE.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\FONCTION_CLIGNOTANT_FONCTION_HABITACLE.h, line 0, character 0
+ ~FONCTION_CLIGNOTANT_FONCTION_HABITACLE.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\SIGNAL_GENERATION_FONCTION_HABITACLE.h, line 0, character 0
+ ~SIGNAL_GENERATION_FONCTION_HABITACLE.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_xml_filter_out.scade, line 0, character 0
+ ~kcg_xml_filter_out.scade
+  at file Z:\SCADE\scadeWorkspace\test\KCG\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file Z:\SCADE\scadeWorkspace\test\KCG\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file Z:\SCADE\scadeWorkspace\test\KCG\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file Z:\SCADE\scadeWorkspace\test\KCG\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+$**************  SCADETOC Version 2019 R2 (build 20190418) **************
+** Generation date: 2020-01-24T11:54:04
+** sc2c.log
+*************************************************************$

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libverif/libverif.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libpwlinear/lut.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libpwlinear/pwlinear.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libmathext/mathext.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libmath/math.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libmath/vect.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/liblinear/filters.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/liblinear/linear.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libdigital/TruthTables.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v194/SCADE/SCADE/libraries/SC65/libdigital/digital.xscade"/>
+    <Option name="input_file" value="Z:/SCADE/scadeWorkspace/test/System.xscade"/>
+    <Option name="input_file" value="Z:/SCADE/scadeWorkspace/test/FONCTION_HABITACLE.xscade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="Z:/SCADE/scadeWorkspace/test/KCG"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="System::System"/>
+    <Option name="auth" value="#off#"/>
+    <Package scadeName="FONCTION_HABITACLE">
+      <Constant macroDef="true" scadeName="Cal_TimeTouchDetection" scadeType="float32" targetName="Cal_TimeTouchDetection_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <Constant macroDef="true" scadeName="Cal_NbTouchActivation" scadeType="float32" targetName="Cal_NbTouchActivation_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <Constant macroDef="true" scadeName="Cal_Tcligno" scadeType="float32" targetName="Cal_Tcligno_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <Constant macroDef="true" scadeName="Cal_SeuilBrakeOn" scadeType="float32" targetName="Cal_SeuilBrakeOn_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <Constant macroDef="true" scadeName="Cal_EmergencySeuilDetection" scadeType="float32" targetName="Cal_EmergencySeuilDetection_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <Constant macroDef="true" scadeName="Cal_EmergencyTime" scadeType="float32" targetName="Cal_EmergencyTime_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <Constant macroDef="true" scadeName="Cal_VbrakeLimit" scadeType="float32" targetName="Cal_VbrakeLimit_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <Constant macroDef="true" scadeName="SampleTime" scadeType="float32" targetName="SampleTime_FONCTION_HABITACLE" targetType="kcg_float32"/>
+      <NoExpNode headerFile="FONCTION_HABITACLE_FONCTION_HABITACLE.h" scadeName="FONCTION_HABITACLE" targetCycleFct="FONCTION_HABITACLE_FONCTION_HABITACLE" targetInitFct="FONCTION_HABITACLE_reset_FONCTION_HABITACLE" targetInitializationFct="FONCTION_HABITACLE_init_FONCTION_HABITACLE">
+        <Input scadeName="Indicator_Input" scadeType="int8" targetName="Indicator_Input" targetType="kcg_int8"/>
+        <Input scadeName="Warning_Input" scadeType="bool" targetName="Warning_Input" targetType="kcg_bool"/>
+        <Input scadeName="Brake_Input" scadeType="int16" targetName="Brake_Input" targetType="kcg_int16"/>
+        <Output inCtx="true" scadeName="leftIndicatorSignal" scadeType="bool" targetName="leftIndicatorSignal" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="rightIndicatorSignal" scadeType="bool" targetName="rightIndicatorSignal" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="brakeSignal" scadeType="bool" targetName="brakeSignal" targetType="kcg_bool"/>
+        <NodeInstance instName="1" refName="FONCTION_CLIGNOTANT_FONCTION_HABITACLE" scadeName="FONCTION_HABITACLE::FONCTION_CLIGNOTANT">
+          <OutCtxVar targetName="Context_FONCTION_CLIGNOTANT_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="FONCTION_FREINAGE_FONCTION_HABITACLE" scadeName="FONCTION_HABITACLE::FONCTION_FREINAGE"/>
+        <NodeInstance instName="1" refName="TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE" scadeName="FONCTION_HABITACLE::TRAITEMENT_CLIGNOTANT">
+          <OutCtxVar targetName="Context_TRAITEMENT_CLIGNOTANT_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE" scadeName="FONCTION_HABITACLE::TRAITEMENT_FREINAGE_URGENCE">
+          <OutCtxVar targetName="Context_TRAITEMENT_FREINAGE_URGENCE_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_FONCTION_HABITACLE_FONCTION_HABITACLE"/>
+      </NoExpNode>
+      <NoExpNode headerFile="TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE.h" scadeName="TRAITEMENT_FREINAGE_URGENCE" targetCycleFct="TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE" targetInitFct="TRAITEMENT_FREINAGE_URGENCE_reset_FONCTION_HABITACLE" targetInitializationFct="TRAITEMENT_FREINAGE_URGENCE_init_FONCTION_HABITACLE">
+        <Input scadeName="Brake_Input" scadeType="int16" targetName="Brake_Input" targetType="kcg_int16"/>
+        <Output inCtx="true" scadeName="EmergencyCommand" scadeType="bool" targetName="EmergencyCommand" targetType="kcg_bool"/>
+        <NodeInstance instName="1" refName="Saturation_FONCTION_HABITACLE" scadeName="FONCTION_HABITACLE::Saturation"/>
+        <Last/>
+        <Last/>
+        <Memory inCtx="true" targetName="lbrake_input" targetType="kcg_int16"/>
+        <Memory inCtx="true" targetName="cntr" targetType="kcg_float32"/>
+        <OutCtxType targetName="outC_TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE"/>
+      </NoExpNode>
+      <NoExpNode headerFile="FONCTION_FREINAGE_FONCTION_HABITACLE.h" scadeName="FONCTION_FREINAGE" targetCycleFct="FONCTION_FREINAGE_FONCTION_HABITACLE">
+        <Input scadeName="Brake_Input" scadeType="int16" targetName="Brake_Input" targetType="kcg_int16"/>
+        <Output scadeName="brakeSignal" scadeType="bool" targetName="brakeSignal" targetType="kcg_bool"/>
+      </NoExpNode>
+      <NoExpNode headerFile="TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE.h" scadeName="TRAITEMENT_CLIGNOTANT" targetCycleFct="TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE" targetInitFct="TRAITEMENT_CLIGNOTANT_reset_FONCTION_HABITACLE" targetInitializationFct="TRAITEMENT_CLIGNOTANT_init_FONCTION_HABITACLE">
+        <Input scadeName="Indicator_Input" scadeType="int8" targetName="Indicator_Input" targetType="kcg_int8"/>
+        <Input scadeName="Warning_Input" scadeType="bool" targetName="Warning_Input" targetType="kcg_bool"/>
+        <Input scadeName="EmergencyCommand" scadeType="bool" targetName="EmergencyCommand" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="leftIndicatorCommand" scadeType="bool" targetName="leftIndicatorCommand" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="rightIndicatorCommand" scadeType="bool" targetName="rightIndicatorCommand" targetType="kcg_bool"/>
+        <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
+          <State scadeName="Initialisation" targetName="SSM_st_Initialisation_SM1">
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="State4" targetName="SSM_TR_Initialisation_State4_1_Initialisation_SM1"/>
+            </Fork>
+          </State>
+          <State scadeName="Counter" targetName="SSM_st_Counter_SM1">
+            <Last/>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="TouchAction" targetName="SSM_TR_Counter_TouchAction_1_Counter_SM1"/>
+            </Fork>
+            <Fork priority="2">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Initialisation" targetName="SSM_TR_Counter_Initialisation_2_Counter_SM1"/>
+            </Fork>
+            <Fork priority="3">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Counter" targetName="SSM_TR_Counter_Counter_3_Counter_SM1"/>
+            </Fork>
+          </State>
+          <State scadeName="TouchAction" targetName="SSM_st_TouchAction_SM1">
+            <Last/>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Initialisation" targetName="SSM_TR_TouchAction_Initialisation_1_TouchAction_SM1"/>
+            </Fork>
+            <Fork priority="2">
+              <Condition/>
+              <Transition kind="weak" scadeDest="TouchAction" targetName="SSM_TR_TouchAction_TouchAction_2_TouchAction_SM1"/>
+            </Fork>
+          </State>
+          <State scadeName="State4" targetName="SSM_st_State4_SM1">
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Counter" targetName="SSM_TR_State4_Counter_1_State4_SM1"/>
+            </Fork>
+          </State>
+          <NextState inCtx="true" mem="true" targetName="SM1_state_nxt"/>
+        </Automaton>
+        <Memory inCtx="true" targetName="_L16" targetType="kcg_int8"/>
+        <Memory inCtx="true" targetName="ctr2" targetType="kcg_uint16"/>
+        <OutCtxType targetName="outC_TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE"/>
+      </NoExpNode>
+      <NoExpNode headerFile="FONCTION_CLIGNOTANT_FONCTION_HABITACLE.h" scadeName="FONCTION_CLIGNOTANT" targetCycleFct="FONCTION_CLIGNOTANT_FONCTION_HABITACLE" targetInitFct="FONCTION_CLIGNOTANT_reset_FONCTION_HABITACLE" targetInitializationFct="FONCTION_CLIGNOTANT_init_FONCTION_HABITACLE">
+        <Input scadeName="EmergencyCommand" scadeType="bool" targetName="EmergencyCommand" targetType="kcg_bool"/>
+        <Input scadeName="leftIndicatorCommand" scadeType="bool" targetName="leftIndicatorCommand" targetType="kcg_bool"/>
+        <Input scadeName="rightIndicatorCommand" scadeType="bool" targetName="rightIndicatorCommand" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="leftIndicatorSignal" scadeType="bool" targetName="leftIndicatorSignal" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="rightIndicatorSignal" scadeType="bool" targetName="rightIndicatorSignal" targetType="kcg_bool"/>
+        <NodeInstance instName="1" refName="SIGNAL_GENERATION_FONCTION_HABITACLE" scadeName="FONCTION_HABITACLE::SIGNAL_GENERATION">
+          <OutCtxVar targetName="Context_SIGNAL_GENERATION_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_FONCTION_CLIGNOTANT_FONCTION_HABITACLE"/>
+      </NoExpNode>
+      <NoExpNode headerFile="SIGNAL_GENERATION_FONCTION_HABITACLE.h" scadeName="SIGNAL_GENERATION" targetCycleFct="SIGNAL_GENERATION_FONCTION_HABITACLE" targetInitFct="SIGNAL_GENERATION_reset_FONCTION_HABITACLE" targetInitializationFct="SIGNAL_GENERATION_init_FONCTION_HABITACLE">
+        <Input scadeName="indicatorCommand" scadeType="bool" targetName="indicatorCommand" targetType="kcg_bool"/>
+        <Input scadeName="EmergencyCommand" scadeType="bool" targetName="EmergencyCommand" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="indicatorSignal" scadeType="bool" targetName="indicatorSignal" targetType="kcg_bool"/>
+        <Automaton scadeName="SM1" targetStatesType="_2_SSM_ST_SM1" targetTransitionsType="_3_SSM_TR_SM1">
+          <State scadeName="CounterInitialisation" targetName="SSM_st_CounterInitialisation_SM1">
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Clignotement" targetName="SSM_TR_CounterInitialisation_Clignotement_1_CounterInitialisation_SM1"/>
+            </Fork>
+          </State>
+          <State scadeName="Clignotement" targetName="SSM_st_Clignotement_SM1">
+            <Automaton scadeName="SM2" targetStatesType="SSM_ST_SM2_Clignotement_SM1" targetTransitionsType="SSM_TR_SM2_Clignotement_SM1">
+              <State scadeName="Allumer" targetName="SSM_st_Allumer_SM2_Clignotement_SM1">
+                <Fork priority="1">
+                  <Condition/>
+                  <Transition kind="weak" scadeDest="Reset" targetName="SSM_TR_Allumer_Reset_1_Allumer_SM2_Clignotement_SM1"/>
+                </Fork>
+              </State>
+              <State scadeName="Eteindre" targetName="SSM_st_Eteindre_SM2_Clignotement_SM1">
+                <Fork priority="1">
+                  <Condition/>
+                  <Transition kind="weak" scadeDest="Reset" targetName="SSM_TR_Eteindre_Reset_1_Eteindre_SM2_Clignotement_SM1"/>
+                </Fork>
+              </State>
+              <State scadeName="Reset" targetName="SSM_st_Reset_SM2_Clignotement_SM1">
+                <Last/>
+                <Fork priority="1">
+                  <Condition/>
+                  <Transition kind="weak" scadeDest="Eteindre" targetName="SSM_TR_Reset_Eteindre_1_Reset_SM2_Clignotement_SM1"/>
+                </Fork>
+                <Fork priority="2">
+                  <Condition/>
+                  <Transition kind="weak" scadeDest="Reset" targetName="SSM_TR_Reset_Reset_2_Reset_SM2_Clignotement_SM1"/>
+                </Fork>
+                <Fork priority="3">
+                  <Condition/>
+                  <Transition kind="weak" scadeDest="Allumer" targetName="SSM_TR_Reset_Allumer_3_Reset_SM2_Clignotement_SM1"/>
+                </Fork>
+              </State>
+              <NextState inCtx="true" mem="true" targetName="SM2_state_nxt_Clignotement_SM1"/>
+            </Automaton>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="CounterInitialisation" targetName="SSM_TR_Clignotement_CounterInitialisation_1_Clignotement_SM1"/>
+            </Fork>
+          </State>
+          <NextState inCtx="true" mem="true" targetName="SM1_state_nxt"/>
+          <ResetNextState inCtx="true" mem="true" targetName="SM1_reset_nxt"/>
+        </Automaton>
+        <Memory inCtx="true" targetName="indicatorSignal" targetType="kcg_bool"/>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="clock_count" targetType="kcg_uint8"/>
+        <OutCtxType targetName="outC_SIGNAL_GENERATION_FONCTION_HABITACLE"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Saturation_FONCTION_HABITACLE.h" scadeName="Saturation" targetCycleFct="Saturation_FONCTION_HABITACLE">
+        <Input scadeName="Val" scadeType="int32" targetName="Val" targetType="kcg_int32"/>
+        <Input scadeName="High" scadeType="int32" targetName="High" targetType="kcg_int32"/>
+        <Input scadeName="Low" scadeType="int32" targetName="Low" targetType="kcg_int32"/>
+        <Output scadeName="LimitedVal" scadeType="int32" targetName="LimitedVal" targetType="kcg_int32"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="System">
+      <RootNode headerFile="System_System.h" scadeName="System" targetCycleFct="System_System" targetInitFct="System_reset_System" targetInitializationFct="System_init_System">
+        <Input inCtx="true" scadeName="Indicator_Input" scadeType="int8" targetName="Indicator_Input" targetType="kcg_int8"/>
+        <Input inCtx="true" scadeName="Warning_Input" scadeType="bool" targetName="Warning_Input" targetType="kcg_bool"/>
+        <Input inCtx="true" scadeName="Brake_Input" scadeType="int16" targetName="Brake_Input" targetType="kcg_int16"/>
+        <Output inCtx="true" scadeName="leftIndicatorSignal" scadeType="bool" targetName="leftIndicatorSignal" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="rightIndicatorSignal" scadeType="bool" targetName="rightIndicatorSignal" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="brakeSignal" scadeType="bool" targetName="brakeSignal" targetType="kcg_bool"/>
+        <NodeInstance instName="1" refName="FONCTION_HABITACLE_FONCTION_HABITACLE" scadeName="FONCTION_HABITACLE::FONCTION_HABITACLE">
+          <OutCtxVar targetName="Context_FONCTION_HABITACLE_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_System_System"/>
+        <InCtxType targetName="inC_System_System"/>
+      </RootNode>
+    </Package>
+    <Package scadeName="digital"/>
+    <Package scadeName="truthtables">
+      <EnumType scadeName="TruthTableValues" targetName="TruthTableValues_truthtables">
+        <EnumVal scadeName="T" targetName="T_truthtables"/>
+        <EnumVal scadeName="F" targetName="F_truthtables"/>
+        <EnumVal scadeName="X" targetName="X_truthtables"/>
+      </EnumType>
+    </Package>
+    <Package scadeName="linear"/>
+    <Package scadeName="filters"/>
+    <Package scadeName="vect"/>
+    <Package scadeName="math"/>
+    <Package scadeName="mathext">
+      <Package scadeName="mathextimpl"/>
+    </Package>
+    <Package scadeName="pwlinear"/>
+    <Package scadeName="lut"/>
+    <Package scadeName="verif"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

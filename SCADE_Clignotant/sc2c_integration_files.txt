@@ -1,0 +1,46 @@
+*****************************
+*** Generated KCG H/Ads files ***
+*****************************
+System_System.h
+FONCTION_HABITACLE_FONCTION_HABITACLE.h
+TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE.h
+Saturation_FONCTION_HABITACLE.h
+TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE.h
+FONCTION_FREINAGE_FONCTION_HABITACLE.h
+FONCTION_CLIGNOTANT_FONCTION_HABITACLE.h
+SIGNAL_GENERATION_FONCTION_HABITACLE.h
+kcg_types.h
+kcg_consts.h
+kcg_sensors.h
+
+*****************************
+*** Generated KCG C/Adb files ***
+*****************************
+System_System.c
+FONCTION_HABITACLE_FONCTION_HABITACLE.c
+TRAITEMENT_FREINAGE_URGENCE_FONCTION_HABITACLE.c
+Saturation_FONCTION_HABITACLE.c
+TRAITEMENT_CLIGNOTANT_FONCTION_HABITACLE.c
+FONCTION_FREINAGE_FONCTION_HABITACLE.c
+FONCTION_CLIGNOTANT_FONCTION_HABITACLE.c
+SIGNAL_GENERATION_FONCTION_HABITACLE.c
+kcg_types.c
+kcg_consts.c
+
+*****************************
+*** Generated SC2C Files ***
+*****************************
+user_macros.h
+kcg_imported_types.h
+
+*****************************
+*** Include Directories ***
+*****************************
+.
+$(SCADE)
+$(SCADE)\include
+$(SCADE)\include\C
+$(SCADE)\include\Ada
+$(SCADE)\lib\Ada
+$(SCADE)\libraries\SC65\libmathext
+
